@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@kreugxr</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="child">
+            <h2>Basic calculator</h2>
+            <form name="calcForm">
+
+                <!-- Inputs section -->            
+                <div class="divInputs">
+                    <input class="number" id="num1" type="number" placeholder="Insert a number" required>
+                    <span class="sign" id="calcSign">+</span>
+                    <input class="number" id="num2" type="number" placeholder="Insert another number" required>    
+                </div>
+      
+                <!-- Radio section-->
+                <div class="divRadio">
+                    <div>
+                        <input type="radio" name="sign_selector" id="sign_add" value="&#43;" checked="checked">
+                        <label for="sign_add">Add (&#43;)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sign_selector" id="sign_sub" value="&#8722;">
+                        <label for="sign_sub">Sub (&#8722;)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sign_selector" id="sign_mul" value="&#215;">
+                        <label for="sign_mul">Mul (&#215;)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sign_selector" id="sign_div" value="&#247;">
+                        <label for="sign_div">Div (&#247;)</label>
+                    </div>
+                </div>
+            
+                <!-- Button section -->
+                <div class="divButton">
+                    <button id="calcButton" onclick="calculate(); return false">Calculate</button>
+                </div>            
+            </form>
+
+         <!-- Result section -->
+         <div id="resultArea"></div>   
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

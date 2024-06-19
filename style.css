@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    color: black;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container h2{
+    text-align: center;
+    margin: 20px;
+    font-style: italic;
+}
+
+.divInputs{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 15px 0;
+}
+
+.number{
+    font-size: 12pt;
+    font-family: monospace;
+    text-align: center;
+}
+
+.sign{
+    width: 20%;
+}
+
+.divRadio{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 15px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.divRadio div{
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.divButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+button{
+    padding: 5px 20px;
+}
+
+#resultArea{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16pt;
+}
+
+/* Estilos específicos para diferentes tamanhos de tela */
+@media only screen and (max-width: 600px) {
+    /* Estilos para telas menores, como celulares */
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divInputs{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        display: block;
+        margin: 15px 0;
+    }
+
+    .child{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .child h2{
+        text-align: center;
+        margin: 10px;
+    }
+
+    .number{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .child input, label{
+        display: inline-block;
+    }
+
+    .child span{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 3px 0;
+        font-size: 16pt;
+    }
+
+    button{
+        padding: 10px 15px;
+    }
+}
