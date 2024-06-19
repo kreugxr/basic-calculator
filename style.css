@@ -71,9 +71,8 @@ button{
     font-size: 16pt;
 }
 
-/* Estilos específicos para diferentes tamanhos de tela */
+
 @media only screen and (max-width: 600px) {
-    /* Estilos para telas menores, como celulares */
 
     .container{
         width: 100%;
